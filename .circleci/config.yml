@@ -2264,6 +2264,7 @@ workflows:
               environment-image:
                 - determinedai/environments:cuda-11.2-tf-2.5-gpu-0.17.4
                 - determinedai/environments:cuda-11.2-tf-2.6-gpu-0.17.4
+                - determinedai/environments:cuda-11.2-tf-2.7-gpu-0.17.4
 
       - test-e2e-gke-cuda-11:
           name: test-e2e-gke-parallel-tfonly
@@ -2284,6 +2285,7 @@ workflows:
               environment-image:
                 - determinedai/environments:cuda-11.2-tf-2.5-gpu-0.17.4
                 - determinedai/environments:cuda-11.2-tf-2.6-gpu-0.17.4
+                - determinedai/environments:cuda-11.2-tf-2.7-gpu-0.17.4
 
       - test-e2e-gke:
           name: test-e2e-gke-single-cpu
@@ -2479,6 +2481,7 @@ workflows:
               environment-image:
                 - determinedai/environments:cuda-11.2-tf-2.5-gpu-0.17.4
                 - determinedai/environments:cuda-11.2-tf-2.6-gpu-0.17.4
+                - determinedai/environments:cuda-11.2-tf-2.7-gpu-0.17.4
 
       - test-e2e-gke-cuda-11:
           name: test-e2e-gke-parallel-tfonly
@@ -2495,6 +2498,7 @@ workflows:
               environment-image:
                 - determinedai/environments:cuda-11.2-tf-2.5-gpu-0.17.4
                 - determinedai/environments:cuda-11.2-tf-2.6-gpu-0.17.4
+                - determinedai/environments:cuda-11.2-tf-2.7-gpu-0.17.4
 
   weekly-vuln-scan:
     triggers:
