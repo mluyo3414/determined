@@ -1,5 +1,5 @@
 # The image registry to use. Defaults to the determinedai repository in DockerHub.
-imageRegistry: determinedai
+imageRegistry: determinedilia
 
 # Install Determined enterprise edition.
 enterpriseEdition: false
