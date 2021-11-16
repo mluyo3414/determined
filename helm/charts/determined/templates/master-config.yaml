@@ -99,8 +99,8 @@ data:
          gpu: {{ .Values.taskContainerDefaults.gpuImage | quote }}
       {{- else if .Values.imageRegistry }}
       image:
-         cpu: {{ .Values.imageRegistry }}/{{ $cpuImage }}
-         gpu: {{ .Values.imageRegistry }}/{{ $gpuImage }}
+         cpu: {{ .Values.imageRegistryEnvs }}/{{ $cpuImage }}
+         gpu: {{ .Values.imageRegistryEnvs }}/{{ $gpuImage }}
       {{- if or .Values.taskContainerDefaults.cpuImage .Values.taskContainerDefaults.gpuImage }}
         {{ required "A valid .Values.taskContainerDefaults.cpuImage entry is required if setting .Values.taskContainerDefaults.gpuImage!" .Values.taskContainerDefaults.cpuImage }}
         {{ required "A valid .Values.taskContainerDefaults.gpuImage entry is required if setting .Values.taskContainerDefaults.cpuImage!" .Values.taskContainerDefaults.gpuImage }}
